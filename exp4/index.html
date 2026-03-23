@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Photo Gallery</h1>
+
+    <!-- Filter Buttons -->
+    <div class="buttons">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('formal')">Formal</button>
+        <button onclick="filterImages('traditional')">Traditional</button>
+        <button onclick="filterImages('special')">Special</button>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+
+        <!-- Formal -->
+        <img src="images/formal1.jpg" class="formal" onclick="openModal(this)">
+        <img src="images/formal2.jpg" class="formal" onclick="openModal(this)">
+        <img src="images/formal3.jpeg" class="formal" onclick="openModal(this)">
+        <img src="images/formal4.jpeg" class="formal" onclick="openModal(this)">
+
+        <!-- Traditional -->
+        <img src="images/traditional1.jpg" class="traditional" onclick="openModal(this)">
+        <img src="images/trad2.jpg" class="traditional" onclick="openModal(this)">
+        <img src="images/trad3.jpg" class="traditional" onclick="openModal(this)">
+        <img src="images/trad4.jpg" class="traditional" onclick="openModal(this)">
+
+        <!-- Special -->
+        <img src="images/shivaji.jpeg" class="special" onclick="openModal(this)">
+        <img src="images/zeal1.jpeg" class="special" onclick="openModal(this)">
+
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <img id="modalImg">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
