@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Landing Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">AVADH</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero d-flex align-items-center text-center text-white">
+        <div class="container">
+            <h1 class="display-4 fade-in">Welcome to My Landing Page</h1>
+            <p class="lead fade-in">Interactive & Responsive Website</p>
+            <button class="btn btn-primary btn-lg" onclick="showMessage()">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-5">
+        <div class="container text-center">
+            <h2>Features</h2>
+            <div class="row mt-4">
+
+                <div class="col-md-4">
+                    <div class="card p-3" onclick="featureClick('Responsive Design')">
+                        <h4>Responsive</h4>
+                        <p>Works on all devices</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card p-3" onclick="featureClick('Easy to Use')">
+                        <h4>Easy</h4>
+                        <p>Simple layout</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card p-3" onclick="featureClick('Modern UI')">
+                        <h4>Modern</h4>
+                        <p>Clean design</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-light py-5">
+        <div class="container text-center">
+            <h2>Contact Us</h2>
+
+            <form onsubmit="return validateForm()">
+                <input type="text" id="name" placeholder="Enter Name" class="form-control mb-2">
+                <input type="email" id="email" placeholder="Enter Email" class="form-control mb-2">
+                <button class="btn btn-success">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+        <p>&copy; 2026 Interactive Landing Page</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    background: #0f172a;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3a8a, #9333ea);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Gradient Text */
+.hero h1 {
+    font-weight: 700;
+    background: linear-gradient(to right, #38bdf8, #a78bfa);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Button */
+.btn-primary {
+    background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.1);
+}
+
+/* Section */
+section {
+    padding: 80px 20px;
+}
+
+/* Cards (Glassmorphism) */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.4s;
+    color: #fff;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0 25px rgba(139, 92, 246, 0.5);
+}
+
+/* Contact Section */
+#contact {
+    background: #020617;
+}
+
+/* Form */
+input {
+    border-radius: 10px !important;
+    border: none !important;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    background: #020617;
+}
+
+/* Animation */
+.fade-in {
+    animation: fadeInUp 1.5s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
