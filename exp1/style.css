@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+  color: white;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #3b82f6;
+}
+
+/* ---------- Section Base ---------- */
+.section {
+  height: 100vh; /* full screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* ---------- Background Gradients ---------- */
+.section-hero {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.section-about {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+}
+
+.section-skills {
+  background: linear-gradient(135deg, #232526, #414345);
+}
+
+.section-projects {
+  background: linear-gradient(135deg, #0f0c29, #302b63);
+}
+
+.section-contact {
+  background: linear-gradient(135deg, #1c1c1c, #383838);
+}
+
+/* ---------- Glass Card ---------- */
+.glass, .card {
+  background: rgba(166, 188, 206, 0.12);
+  backdrop-filter: blur(15px);
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass:hover, .card:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 30px 60px rgba(0,0,0,0.35),
+    0 0 30px rgba(255,255,255,0.08);
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: 10px 26px;
+  border-radius: 25px;
+  background: #3b82f6;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* ---------- Glass Sections ---------- */
+.glass-section {
+  max-width: 800px;
+  padding: 40px 30px;
+  animation: fadeUp 1s ease both;
+}
+
+/* ---------- Fade-Up Animation ---------- */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- Skills Cards ---------- */
+.skill-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill-cards .card {
+  padding: 20px 30px;
+  flex: 0 0 120px;
+  text-align: center;
+}
+
+/* ---------- Project Cards ---------- */
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-cards .card {
+  padding: 40px 30px;
+  flex: 0 0 200px;
+  cursor: pointer;
+}
+
+/* ---------- Hero Text ---------- */
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  margin-bottom: 25px;
+  opacity: 0.8;
+}
